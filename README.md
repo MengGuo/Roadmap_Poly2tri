@@ -12,11 +12,11 @@ this package generates a roadmap for autonomous robots within a 2D polygon works
 Features
 -----
 * Takes a 2D workspace with any number of non-overlaping polygon obstacles
-* Triangulation over the workspace
+* Triangulation over the workspace by poly2tri
 * Generate waypoints and raodmap for the robot to navigate within the workspace
 
 <p align="center">  
-  <img src="https://github.com/MengGuo/Roadmap_Poly2tri/blob/master/data/ws_tri.pdf" width="800"/>
+  <img src="https://github.com/MengGuo/Roadmap_Poly2tri/blob/master/data/example.png" width="800"/>
 </p>
 
 ----
