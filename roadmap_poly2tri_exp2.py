@@ -3,7 +3,7 @@
 import sys
 
 from time import clock
-from p2t import *
+from poly2tri.p2t import *
 
 import matplotlib
 import matplotlib.pyplot as plt
@@ -73,7 +73,7 @@ def visualize_traj(ws, tri, wp, name=None):
     ax.grid('on')
     # plt.axis('off')
     if name:
-        plt.savefig('%s.pdf' %name,bbox_inches='tight')
+        plt.savefig('data/%s.pdf' %name,bbox_inches='tight')
     return figure
     
     
@@ -134,19 +134,19 @@ for t in triangles:
 
 visualize_traj(ws, tri, wp, 'ws_tri')
 
-print tri
+#print tri
 
-print wp
+#print wp
 
 # save the triangles to file
-file_tri = open('tris.txt', 'w')
+file_tri = open('data/tris.txt', 'w')
 for t in tri:
     file_tri.write(str(t) + '\n')
 file_tri.close()    
 
 
 # save the waypoints to file
-file_wps = open('wps.txt', 'w')
+file_wps = open('data/wps.txt', 'w')
 for w in wp:
     file_wps.write(str(w) + '\n')
 file_wps.close()    

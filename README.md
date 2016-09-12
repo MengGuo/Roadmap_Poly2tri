@@ -1,7 +1,7 @@
 Roadmap_Poly2tri
 ========
 
-Construct roadmap from triangulation of polygon workspace.
+Construct roadmap from triangulation of polygon workspace
 
 -----
 Description
@@ -16,7 +16,7 @@ Features
 * Generate waypoints and raodmap for the robot to navigate within the workspace
 
 <p align="center">  
-  <img src="https://github.com/MengGuo/Py_iRobot_OptiTrack/blob/master/figures/combined.png" width="800"/>
+  <img src="https://github.com/MengGuo/Roadmap_Poly2tri/blob/master/data/ws_tri.pdf" width="800"/>
 </p>
 
 ----

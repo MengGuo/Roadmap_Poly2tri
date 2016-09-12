@@ -3,7 +3,7 @@
 import sys
 
 from time import clock
-from p2t import *
+from poly2tri.p2t import *
 
 import pickle
 
@@ -68,7 +68,7 @@ def visualize_traj(ws, tri, wp, name=None):
     ax.grid('on')
     # plt.axis('off')
     if name:
-        plt.savefig('%s.pdf' %name,bbox_inches='tight')
+        plt.savefig('data/%s.pdf' %name,bbox_inches='tight')
     return figure
     
     
@@ -79,7 +79,7 @@ hole2 = [ [1.6, 1.1], [1.9, 1.1], [1.9, 1.4], [1.6, 1.4], ]   #obs2
 ws = [boundary, hole1, hole2]
 
 
-pickle.dump(ws, open('ws_lab.p','wb'))
+pickle.dump(ws, open('data/ws_lab.p','wb'))
 
 # construct polyline
 polyline = []
@@ -126,12 +126,12 @@ for t in triangles:
 visualize_traj(ws, tri, wp, 'ws_tri_lab')
 
 # print 'Triangles'
-print tri
+# print tri
 # print 'Waypoints'
 #print wp
 
-pickle.dump(tri, open('tris_lab.p','wb'))
-pickle.dump(wp, open('wps_lab.p','wb'))
+pickle.dump(tri, open('data/tris_lab.p','wb'))
+pickle.dump(wp, open('data/wps_lab.p','wb'))
 
 # # save the triangles to file
 # file_tri = open('tris_lab.txt', 'w')
